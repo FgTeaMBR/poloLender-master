@@ -13,7 +13,7 @@ const isMongo = !!mongodbURI;
 export const isHeroku = !!(process.env.DYNO || process.env.NODE_HOME && process.env.NODE_HOME.indexOf('heroku'));
 
 export const configDefault = {
-  port: 5000,
+  port: 8080,
   authToken: {
     readOnly: '',
     readWrite: '',
