@@ -85,7 +85,7 @@ export const httpServerStart = function httpServerStart(port) {
   });
 
 
-  const httpPort = process.env.PORT || port || '5000';
+  const httpPort = process.env.PORT || port || '8080';
   app.set('port', httpPort);
 
   const httpServer = http.createServer(app);
